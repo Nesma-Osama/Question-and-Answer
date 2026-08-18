@@ -6,7 +6,7 @@ The application allows users to choose an LLM provider, select a model, and conf
 
 > 🚧 **Project Status: Under Development**
 >
-> This project is still being improved. More features such as **RAG, chat history, and other improvements** will be added in future versions.
+> This project is still being improved. More features such as **chat history, and other improvements** will be added in future versions.
 
 ---
 
@@ -22,8 +22,15 @@ The application allows users to choose an LLM provider, select a model, and conf
 - 🖥️ Interactive Streamlit interface
 - ❌ Basic error handling
 - 🔌 Provider-independent model initialization
+- 📄 PDF document loading
+- ✂️ Document chunking using RecursiveCharacterTextSplitter
+- 🔎 Semantic similarity search
+- 🗄️ Chroma vector database
+- 🧠 Hugging Face embeddings
+- 🎯 Cross-encoder reranking
+- 📚 RAG-based question answering
+- 📋 Displays retrieved documents/context used to answer the question
 - 📊 LangSmith integration for tracing and monitoring
-
 ---
 
 ## Technologies
@@ -36,6 +43,8 @@ The application allows users to choose an LLM provider, select a model, and conf
 - **Groq** – LLM provider
 - **OpenAI** – LLM provider
 - **python-dotenv** – Environment variable management
+- **Chroma** – Vector database
+- **Hugging Face** – Embedding and reranking models
 
 ---
 
@@ -48,5 +57,6 @@ Question-and-Answer/
 ├── chatbot.py
 ├── requirements.txt
 ├── .env
+├── research_papers/
 ├── .gitignore
 └── README.md
