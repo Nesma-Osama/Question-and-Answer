@@ -5,3 +5,10 @@ python-dotenv
 streamlit
 langchain_core
 langchain-groq
+pypdf
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+tf-keras
+torch
+torchvision

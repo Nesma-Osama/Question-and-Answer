@@ -32,7 +32,11 @@ if api_key:
         response = chatbot_func(
             model_provider, api_key, model_name, temperature, max_tokens, user_input
         )
-        st.write(response)
+        st.write(response["answer"])
+        with st.expander("Similarity Search"):
+            for doc in response["context"]:
+                st.write(doc.page_content)
+                st.write("------------------------------")        
     else:
         st.write("Ask Question")
 else:
